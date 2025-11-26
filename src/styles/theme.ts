@@ -15,12 +15,12 @@ declare module 'styled-components' {
 }
 
 const baseColors = {
-  white: '#eccfcfff ',
+  white: '#fff',
   black: '#202020',
   red: {
     base: '#D70808',
     light1: '#E57373',
-    light2: '#EF9A9A',
+    light2: '#c7ababff',
     dark1: '#C62828',
     dark2: '#B71C1C',
   },
