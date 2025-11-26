@@ -8,7 +8,7 @@
     "build-all": "yarn build && yarn build-storybook",
     "build-storybook": "storybook build --output-dir build/storybook",
     "build-storybook:test": "storybook build --output-dir build/storybook --test",
-    "chromatic": "chromatic --project-token $CHROMATIC_PROJECT_TOKEN --exit-zero-on-changes --only-changed",
+    "chromatic": "chromatic --project-token chpt_dbe9a3b789f79d7 --exit-zero-on-changes",
     "lint": "eslint --fix .",
     "pre-commit": "lint-staged",
     "prepare": "husky",
