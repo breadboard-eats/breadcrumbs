@@ -1,6 +1,6 @@
 import { addons } from 'storybook/manager-api'
 import { create } from 'storybook/theming/create'
-import logo from '../src/assets/images/logo-black.svg'
+import logo from '../src/assets/images/logo.png'
 
 const theme = create({
   base: 'light',

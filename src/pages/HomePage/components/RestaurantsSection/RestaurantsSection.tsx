@@ -5,7 +5,7 @@ import Carousel, { type ArrowProps, type CarouselProps } from 'react-multi-carou
 import { useFetchRestaurants } from '../../../../api/hooks'
 import { IconButton } from '../../../../components/IconButton'
 import { PageSection } from '../../../../components/PageSection'
-import { RestaurantCard, RestaurantCardSkeleton } from '../../../../components/RestaurantCard'
+import { RestaurantCard, RestaurantCardSkeleton } from '../../../../components/Card'
 import { Restaurant } from '../../../../types'
 import { isMobile } from '../../../../helpers'
 

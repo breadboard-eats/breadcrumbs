@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import { useFetchRestaurantsByCategory } from '../../api/hooks'
 import { PageTemplate } from '../../templates/PageTemplate'
-import { RestaurantCard, RestaurantCardSkeleton } from '../../components/RestaurantCard'
+import { RestaurantCard, RestaurantCardSkeleton } from '../../components/Card'
 import { TopBanner } from '../../components/TopBanner'
 import { categories } from '../../stub/categories'
 import sushi from '../../assets/images/sushi.svg'

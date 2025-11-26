@@ -3,18 +3,18 @@ import type { Meta, StoryObj } from '@storybook/react-vite'
 
 import { restaurants } from '../../stub/restaurants'
 
-import { RestaurantCard } from './RestaurantCard'
+import { Card } from './Card'
 
 const meta = {
-  title: 'Components/RestaurantCard',
-  component: RestaurantCard,
+  title: 'Components/Card',
+  component: Card,
   parameters: {
     design: {
       type: 'figspec',
       url: 'https://www.figma.com/file/3Q1HTCalD0lJnNvcMoEw1x/Mealdrop?type=design&node-id=1091-2986&mode=design&t=PGeoMU7t8HOFToQL-4',
     },
   },
-} satisfies Meta<typeof RestaurantCard>
+} satisfies Meta<typeof Card>
 
 export default meta
 

@@ -5,7 +5,7 @@ import { Body, Heading } from '../typography'
 import { Badge } from '../Badge'
 import { Review } from '../Review'
 
-type RestaurantCardProps = {
+type CardProps = {
   name: string
   rating?: number
   specialty: string
@@ -120,7 +120,7 @@ const StyledHeading = styled(Heading)(
   `
 )
 
-export const RestaurantCardSkeleton = () => {
+export const CardSkeleton = () => {
   const { color } = useTheme()
   return (
     /* @ts-expect-error wrong types! */
@@ -146,7 +146,7 @@ export const RestaurantCardSkeleton = () => {
   )
 }
 
-export const RestaurantCard = ({
+export const Card = ({
   photoUrl,
   name,
   specialty,
@@ -157,9 +157,9 @@ export const RestaurantCard = ({
   isNew = false,
   className,
   onClick,
-}: RestaurantCardProps) => {
+}: CardProps) => {
   if (isLoading) {
-    return <RestaurantCardSkeleton />
+    return <CardSkeleton />
   }
 
   return (

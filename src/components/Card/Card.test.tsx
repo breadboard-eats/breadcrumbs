@@ -3,11 +3,11 @@ import { screen } from '@testing-library/react'
 import { composeStories } from '@storybook/react-vite'
 import { axe } from 'vitest-axe'
 
-import * as stories from './RestaurantCard.stories'
+import * as stories from './Card.stories'
 
 const { Default, Loading, New, Closed } = composeStories(stories)
 
-describe('RestaurantCard', () => {
+describe('Card', () => {
   test('should render correctly', async () => {
     await Default.run()
 
