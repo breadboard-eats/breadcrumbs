@@ -8,7 +8,8 @@ import { Sidebar } from '../Sidebar'
 import { Body } from '../typography'
 
 const FooterContainer = styled.div`
-  display: flex;
+  display: block;
+  text-align: center;
   flex-direction: column;
   width: 100%;
   justify-content: space-between;
