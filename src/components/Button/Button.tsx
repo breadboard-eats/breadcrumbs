@@ -46,7 +46,7 @@ const StyledButton = styled.button<StyledButtonProperties>(
     }
 
     @media ${breakpoints.M} {
-      padding: ${$large ? '1.125rem 1.5rem' : '0.3rem 0.5rem'};
+      padding: ${$large ? '1.125rem 1.5rem' : '0.5rem 0.8rem'};
     }
   `
 )

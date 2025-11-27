@@ -27,7 +27,7 @@ const Footer = ({ onClick, totalPrice }: any) => (
       <Body type="span">Total</Body>
       <Body type="span">{toCurrency(totalPrice)}</Body>
     </TotalSection>
-    <Button disabled={totalPrice === 0} large onClick={onClick}>
+    <Button disabled={totalPrice === 0} onClick={onClick}>
       Checkout
     </Button>
   </FooterContainer>
