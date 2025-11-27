@@ -18,6 +18,7 @@ const StyledButton = styled.button<StyledButtonProperties>(
   ({ $clear, $round, theme: { color, boxShadow, borderRadius } }) => css`
     outline: none;
     border: 0;
+    border: 1px solid black;
     font-family: 'Hind';
     font-size: 1.6rem;
     border-radius: ${$round ? borderRadius.xl : borderRadius.xs};
