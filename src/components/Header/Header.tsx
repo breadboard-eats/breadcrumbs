@@ -22,7 +22,7 @@ export const HeaderContainer = styled.div<{ $sticky: boolean }>(
   ({ $sticky, theme: { color } }) => css`
     display: flex;
     justify-content: space-between;
-    height: 58px;
+    height: 64px;
     border-bottom: 1px solid ${color.headerBorder};
     top: 0;
     left: 0;
