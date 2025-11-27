@@ -10,6 +10,7 @@ type CardProps = {
   rating?: number
   specialty: string
   photoUrl: string
+  photoAlt: string
   isClosed?: boolean
   categories?: string[]
   isLoading?: boolean
@@ -85,7 +86,7 @@ const ImageContainer = styled.div`
   position: relative;
   display: flex;
 `
-const RestaurantImage = styled.img<{ $isClosed: boolean }>`
+const CardImage = styled.img<{ $isClosed: boolean }>`
   height: 200px;
   width: 100%;
   border-radius: 8px 8px 0px 0px;
@@ -148,6 +149,7 @@ export const CardSkeleton = () => {
 
 export const Card = ({
   photoUrl,
+  photoAlt,
   name,
   specialty,
   rating,
@@ -163,11 +165,7 @@ export const Card = ({
   }
 
   return (
-    <Container
-      className={className}
-      data-testid="restaurant-card"
-      onClick={isClosed ? undefined : onClick}
-    >
+    <Container className={className} data-testid="card" onClick={isClosed ? undefined : onClick}>
       {isNew && <NewTag>new</NewTag>}
       <ImageContainer>
         {isClosed && (
@@ -175,7 +173,7 @@ export const Card = ({
             <Body type="span">This restaurant is closed.</Body>
           </Closed>
         )}
-        <RestaurantImage $isClosed={isClosed} loading="lazy" src={photoUrl} alt="restaurant" />
+        <CardImage $isClosed={isClosed} loading="lazy" src={photoUrl} alt={photoAlt} />
       </ImageContainer>
       <StyledContent>
         <StyledHeading level={2}>{name}</StyledHeading>
