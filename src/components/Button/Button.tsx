@@ -1,7 +1,6 @@
 import * as React from 'react'
 import styled, { css, useTheme } from 'styled-components'
 
-import { breakpoints } from '../../styles/breakpoints'
 import { Icon, IconName } from '../Icon'
 
 const Spacer = styled.span`
@@ -16,15 +15,15 @@ type StyledButtonProperties = {
 }
 
 const StyledButton = styled.button<StyledButtonProperties>(
-  ({ $clear, $large, $round, $withIcon, theme: { color, boxShadow, borderRadius } }) => css`
+  ({ $clear, $round, theme: { color, boxShadow, borderRadius } }) => css`
     outline: none;
     border: 0;
     font-family: 'Hind';
     border-radius: ${$round ? borderRadius.xl : borderRadius.xs};
+    padding: 0.6rem 0.8rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: ${$large ? '1.125rem 1rem' : '0.3rem 0.5rem'};
     color: ${$clear ? color.primaryText : color.buttonText};
 
     transition: box-shadow 150ms ease-in;
@@ -43,10 +42,6 @@ const StyledButton = styled.button<StyledButtonProperties>(
     &:disabled {
       background-color: ${$clear ? color.buttonClear : color.buttonPrimary};
       opacity: 0.4;
-    }
-
-    @media ${breakpoints.M} {
-      padding: ${$large ? '1.125rem 1.5rem' : '0.5rem 0.8rem'};
     }
   `
 )
