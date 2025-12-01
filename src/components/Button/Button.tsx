@@ -19,8 +19,9 @@ const StyledButton = styled.button<StyledButtonProperties>(
     outline: none;
     border: 0;
     font-family: 'Hind';
+    font-size: 1.6rem;
     border-radius: ${$round ? borderRadius.xl : borderRadius.xs};
-    padding: 0.6rem 0.8rem;
+    padding: 1rem 2.5rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
