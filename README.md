@@ -46,4 +46,4 @@ You can check this repo as a reference for:
   ![](./.github/media/figma-connect.png)
 - <a href="https://mealdrop.vercel.app/storybook/?path=/story/components-button--default&globals=theme:dark">Theme switching</a>
   ![](./.github/media/theme-toolbar.gif)
-- And much more!
+- And much more!s
